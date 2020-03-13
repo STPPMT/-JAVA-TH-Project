@@ -429,7 +429,7 @@ implements <a href="../../java/io/Serializable.html" title="interface in java.io
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../java/lang/String.html#compareTo-java.lang.String-">compareTo</a></span>(<a href="../../java/lang/String.html" title="class in java.lang">String</a>&nbsp;anotherString)</code>
-<div class="block">Compares two strings lexicographically.</div>
+<div class="block">เป็นการเปรียบเทียบของ2ข้อความว่าเหมือนกันหรือไม่(ตัวอย่าง "int num = str1.compareTo( str2 );"ถ้าเหมือนกันค่าnum จะเป็น 0 แต่ถ้าต่างตัวเลขจะติดลบ)</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -442,7 +442,7 @@ implements <a href="../../java/io/Serializable.html" title="interface in java.io
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../java/lang/String.html" title="class in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../java/lang/String.html#concat-java.lang.String-">concat</a></span>(<a href="../../java/lang/String.html" title="class in java.lang">String</a>&nbsp;str)</code>
-<div class="block">Concatenates the specified string to the end of this string.</div>
+<div class="block">คือการเอาข้อความมาต่อ</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -481,7 +481,7 @@ implements <a href="../../java/io/Serializable.html" title="interface in java.io
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../java/lang/String.html#endsWith-java.lang.String-">endsWith</a></span>(<a href="../../java/lang/String.html" title="class in java.lang">String</a>&nbsp;suffix)</code>
-<div class="block">Tests if this string ends with the specified suffix.</div>
+<div class="block">เช็คคำหลังสุดในข้อความว่าตรงรึเปล่า</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
@@ -568,16 +568,14 @@ implements <a href="../../java/io/Serializable.html" title="interface in java.io
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../java/lang/String.html#indexOf-int-">indexOf</a></span>(int&nbsp;ch)</code>
-<div class="block">Returns the index within this string of the first occurrence of
- the specified character.</div>
+<div class="block">ระบุตัวอักษรและเมดธอดจะนับให้เราว่ามีตัวอักษรนั้นกี่ตัว(ถ้าไม่มีตัวอักษรนั้นในข้อความจะรีเทิร์นเป็นค่าลบ)</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../java/lang/String.html#indexOf-int-int-">indexOf</a></span>(int&nbsp;ch,
        int&nbsp;fromIndex)</code>
-<div class="block">Returns the index within this string of the first occurrence of the
- specified character, starting the search at the specified index.</div>
+<div class="block">หาตัวอักษรโดยเริ่มจากตำแหน่งที่ระบุแล้วจะรีเทินค่าตำแหน่งที่เจอตัวอักษร</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
@@ -659,7 +657,7 @@ implements <a href="../../java/io/Serializable.html" title="interface in java.io
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../java/lang/String.html#length--">length</a></span>()</code>
-<div class="block">Returns the length of this string.</div>
+<div class="block">รีเทิร์นความยาวของข้อความ</div>
 </td>
 </tr>
 <tr id="i36" class="altColor">
